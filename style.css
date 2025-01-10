@@ -5,8 +5,11 @@
   padding: 0;
   margin: 0;
 }
-.space-div{
+.space-div {
   height: 80px;
+}
+body {
+  background-color: rgba(241, 241, 243, 1);
 }
 
 /* share style  */
@@ -28,6 +31,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+/* -small card title (vision and pillars card title) */
+.small-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: 'Fira Sans';
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* different style class and id */
@@ -53,14 +63,14 @@
   line-height: normal;
 }
 .navber-button {
-  display: flex;
-  /* padding: 10px 5px; */
-  justify-content: center;
-  align-items: center;
   border-radius: 8px;
   border: 1px solid #006a50;
   width: 100px;
   height: 50px;
+  cursor: pointer;
+}
+.navber-button:hover {
+  background-color: rgb(202, 201, 201);
 }
 .navber-button a {
   color: #006a50;
@@ -71,7 +81,6 @@
   line-height: normal;
   text-decoration: none;
 }
-
 /* hero section container */
 .hero-container {
   display: flex;
@@ -105,6 +114,10 @@
   border-radius: 8px;
   background: #006a50;
   border-style: none;
+  cursor: pointer;
+}
+.hero-container-left button:hover {
+  background-color: #09a15c;
 }
 .hero-container-left button a {
   text-decoration: none;
@@ -119,10 +132,186 @@
   flex-direction: column;
   align-items: start;
   gap: 24px;
+  background: #c6e4d6;
 }
 .hero-container-left-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+}
+/* Pillars section style */
+.Pillars-container {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+#Pillars-section {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: center;
+}
+.pillars-cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.pillars-card {
+  width: 302px;
+  min-height: 250px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: #fff;
+}
+.pillars-card:hover {
+  box-shadow: 10px 10px 10px floralwhite;
+}
+.card-text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+/* vision part dighn 3 part */
+#vision-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vision-container {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.vision-part-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  border: 0px solid #5490f5;
+}
+.card button {
+  display: flex;
+  padding: 11px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  border-radius: 8px;
+  border-style: none;
+}
+.vision-part2-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.vision-part2-cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.vision-card-1 {
+  background: rgba(84, 144, 245, 0.2);
+}
+.vision-card-1:hover {
+  box-shadow: 5px 5px 5px rgb(234, 234, 255);
+}
+.vision-card-1-btn {
+  background: #5490f5;
+  cursor: pointer;
+}
+.vision-card-1-btn:hover {
+  background-color: #2b3e60;
+  color: white;
+}
+
+.vision-card-2 {
+  border: 0px solid #09a15c;
+  background: #c6e4d6;
+}
+.vision-card-2:hover {
+  box-shadow: 5px 5px 5px rgb(205, 247, 221);
+}
+.vision-card-2-btn {
+  background: #09a15c;
+  cursor: pointer;
+}
+.vision-card-2-btn:hover {
+  background-color: #03b93d;
+  color: white;
+}
+.vision-card-3 {
+  border: 0px solid #ffc239;
+  background: #f7ebcf;
+}
+.vision-card-3:hover {
+  box-shadow: 5px 5px 5px rgba(230, 217, 191, 0.519);
+}
+.vision-card-3-btn {
+  background: #ffc239;
+  cursor: pointer;
+}
+.vision-card-3-btn:hover {
+  background-color: #d3b321;
+  color: white;
+}
+/* vision part-3 style */
+.vision-part-3 {
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: #fff;
+}
+
+.vision-part-3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  background-image: url(./assets/quote-bg.png);
+  background-repeat: no-repeat;
+}
+.title-Dr-Yunus {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: 'Fira Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.description-Dr-Yunus {
+  color: rgba(14, 14, 14, 0.6);
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
