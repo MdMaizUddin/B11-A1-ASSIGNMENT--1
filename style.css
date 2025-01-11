@@ -331,9 +331,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: #c6e4d6;
+  font-family: 'Fira Sans';
+  font-size: 20px;
+  font-weight: 600;
 }
 .Question {
   display: flex;
@@ -357,20 +359,18 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.Question-pera {
+.Question-1-pera {
   color: #0e0e0e;
   font-family: 'Fira Sans';
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  align-items: center;
-  display: flex;
 }
 .Question-right {
   display: flex;
   align-items: center;
-  padding: 10px 14px;
+  padding: 24px;
   justify-content: center;
   gap: 12px;
   border-left: 2px solid black;
@@ -382,6 +382,12 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  border-radius: 4px;
+  border: 1px solid #0e0e0e;
+  background: #c6e4d6;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
 }
 /* recent news section style */
 #recent-news {
@@ -412,30 +418,29 @@ body {
   border-radius: 24px;
   background: #fff;
 }
-.recent-news-card h2{
-   color: rgba(14, 14, 14, 0.80);
-font-family: "Fira Sans";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.recent-news-card h2 {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: 'Fira Sans';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.recent-news-card-2 h2{
-   color: rgba(14, 14, 14, 0.80);
-font-family: "Fira Sans";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.recent-news-card-2 h2 {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: 'Fira Sans';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.recent-news-card-common-style{
-  color: rgba(14, 14, 14, 0.70);
-font-family: "Fira Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-
+.recent-news-card-common-style {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 /* this is for middle card */
 .recent-news-card-2 {
@@ -641,7 +646,7 @@ form .input-1 {
   font-weight: 400;
   border-style: none;
   border-radius: 8px 0px 0px 8px;
- outline: none;
+  outline: none;
 }
 form .input-2 {
   display: flex;
@@ -659,7 +664,7 @@ form .input-2 {
   background: #006a50;
   border-style: none;
 }
-.input-2:hover{
+.input-2:hover {
   background-color: #03b93dc3;
   cursor: pointer;
 }
@@ -675,7 +680,7 @@ footer {
   align-self: stretch;
 }
 footer hr {
-  border: 1px solid rgb(218, 217, 217);
+  border: 0.3px solid rgb(218, 217, 217);
   width: 1000px;
 }
 footer h3 {
@@ -691,8 +696,8 @@ footer .icon {
   align-items: flex-start;
   gap: 23px;
 }
-.icon img{
+.icon img {
   width: 20px;
-height: 20px;
-flex-shrink: 0;
+  height: 20px;
+  flex-shrink: 0;
 }
